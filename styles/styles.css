@@ -3,21 +3,30 @@
 David Jukes
  */
 
+
 :root{
     --black-border: 1px solid black;
     --lite-border: 1px solid rgb(000 / 0.1);
     --padding: 1rem;
     --img-box-shadow: 0 0 30px gray; 
-    
+ 
+    /* added the main color pallette as part of root so I can use these colors consistently and if we get to a point we can choose to replace the blue it will be easier */
+
+
     /* color pallette */
     --header-color: darkblue;
     --primary-background: lightblue;
     --pop-out-background: #eee;
+}
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--primary-background)
+    background-color: var(--primary-background);
 }
 
 nav{
@@ -26,22 +35,25 @@ nav{
 }
 
 nav a {
-    color: white;
+    /* color: white; */
+    color: var(--primary-background);
     display: block;
-    padding: var(--padding);
+    padding: 5px;
 }
 
 h1{
     color: var(--header-color);
+    padding: var(--padding) 0;
 }
 
 main img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border: var(--black-border);
     padding: var(--padding);
     box-shadow: var(--img-box-shadow);
     background-color: var(--pop-out-background);
+    float: right ;
 }
 
 p{
@@ -50,16 +62,13 @@ p{
 
 main {
     max-width: 800px;
+    padding-left: var(--padding);
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: var(--black-border);
-    padding: var(--padding);
-    background-color: var(--pop-out-background);
-    color: #333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -67,11 +76,36 @@ aside img {
     height: auto;
     border: var(--lite-border);
     box-shadow: var(--img-box-shadow);
+}
 
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 135px;
+    color: goldenrod;
 }
 
 footer {
     margin-top: 15px;
     border-top: var(--black-border);
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: var(--lite-border);
+    padding: var(--padding);
+    background-color: var(--pop-out-background);
+    color: #333;
+}
+
+/* added some classes for formatting */
+.profile {
+    height: 175px;
+}
+
+.temples .box {
+   margin-left: 0;
+    
 }
