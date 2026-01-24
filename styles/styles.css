@@ -9,6 +9,18 @@
 
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    
+}
+
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -34,20 +46,18 @@ main {
 }
 
 main img {
-    width: 400px;
+    width: 250px;
     height: auto;
     border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 aside {
     width: 400px;
-    margin: 1rem;
-    border: var(--border);
-    padding: 1rem;
-    background-color: #e1eaf5;
-    color: #333333;
+    margin: 10px 0;
+    position: relative;
     text-align: center;
 }
 
@@ -56,8 +66,29 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3rem;
+}
+aside p {
+    text-align: left;
+}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid black;
     text-align: center;
+}
+/*
+Class Selectors
+*/
+
+.box {
+    margin: 1rem;
+    border: var(--border);
+    padding: 1rem;
+    background-color: #e1eaf5;
+    color: #333333;
 }
