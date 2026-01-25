@@ -1,0 +1,108 @@
+:root {
+/* CSS HEX */
+    --primary-color: #274E60ff;
+    --secondary-color: #6091BEff;;
+    --accent1-color: #C1C0A4ff;
+    --accent2-color: #C7CBCAff;
+    --accent3-color: #211E23ff;
+    --accent4-color: #EDBF1Aff;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-sarif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--accent1-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: var(--primary-color);
+
+}
+
+ul li a:hover {
+    background-color: var(--secondary-color);
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent3-color)
+
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* note I removed nav from this as I am controlling how that works in a different line */
+p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+footer img {
+    width: 25px;
+    height: auto;
+}
+
+/* Class Descriptors */
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent2-color);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    opacity: 0.7;
+    background-color: var(--accent2-color);
+    }
+
+.hero article img {
+    float: right;
+    width: 125px;
+
+}
