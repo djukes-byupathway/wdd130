@@ -1,7 +1,6 @@
 :root {
 /* CSS HEX */
     --primary-color: #274E60ff;
-    --secondary-color: #6091BEff;;
     --accent1-color: #C1C0A4ff;
     --accent2-color: #C7CBCAff;
     --accent3-color: #211E23ff;
@@ -9,6 +8,7 @@
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-sarif;
 }
+/* --secondary-color: #6091BEff; */
 
 * {
     margin: 0;
@@ -74,25 +74,21 @@ footer p {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-items: space-between;
 }
 
 
 .socialmedia a {
     color:var(--accent2-color);
     background-color: var(--primary-color);
-    padding: auto;
+    text-decoration: none;
 }
 
 .socialmedia img {
     width: 40px;
     height: auto;
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
     margin: .25rem;
-    border: 5px solid rgba(239, 213, 120, 0.1);
 }
-
-
 
 .hero {
     position: relative;
@@ -123,7 +119,7 @@ footer p {
     }
 
 .hero article img {
-    float: left;
+    float: right;
     width: 125px;
 
 }
@@ -145,6 +141,7 @@ footer p {
     padding: 10px;
     text-decoration: none;
     background-color: var(--primary-color);
+    font-size: 2rem;
 }
 
 .navigation a:hover {
@@ -154,7 +151,7 @@ footer p {
 
 .hist {
     display: grid;
-    grid-template: 1fr 6fr / 33% 34% 33;
+    grid-template: 1fr 6fr / 33% 34% 33%;
     
 }
 
