@@ -5,11 +5,10 @@
     --accent1-color: #C1C0A4ff;
     --accent2-color: #C7CBCAff;
     --accent3-color: #211E23ff;
+    --accent4-color: #EDBF1Aff; 
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-sarif;
 }
-
-/*    --accent4-color: #EDBF1Aff; */
 
 * {
     margin: 0;
@@ -19,32 +18,22 @@
 }
 
 header, main, footer {
-    width: 840px;
+    width: 1200px;
     margin: 0 auto;
 }
 
-ul {
-    list-style-type: none;
-    overflow: hidden;
+header {
     background-color: var(--primary-color);
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+
 }
 
-ul li {
-    float: left;
-}
-
-ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
+header img {
     background-color: var(--primary-color);
-
-}
-
-ul li a:hover {
-    background-color: var(--secondary-color);
 }
 
 body {
@@ -56,23 +45,54 @@ body {
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    font-size: 2rem;
 }
 
-/* note I removed nav from this as I am controlling how that works in a different line */
+
 p, section, article {
-    margin: 16px;
+    margin: 8px;
     padding: 8px;
 }
 
-footer img {
-    width: 25px;
-    height: auto;
+footer {
+    background-color: var(--primary-color);
+    margin: 1rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+footer p {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
 /* Class Descriptors */
-.socialmedia a {
-    text-decoration: none;
+.socialmedia {
+    background-color: var(--primary-color);
+    list-style: none; /* no bullet points */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-items: space-between;
 }
+
+
+.socialmedia a {
+    color:var(--accent2-color);
+    background-color: var(--primary-color);
+    padding: auto;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
+    background-color: var(--primary-color);
+    margin: .25rem;
+    border: 5px solid rgba(239, 213, 120, 0.1);
+}
+
+
 
 .hero {
     position: relative;
@@ -103,7 +123,74 @@ footer img {
     }
 
 .hero article img {
-    float: right;
+    float: left;
     width: 125px;
 
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+    background-color: var(--primary-color);
+}
+
+.navigation a {
+    display: block;
+    color: var(--accent2-color);
+    padding: 10px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+}
+
+.navigation a:hover {
+    color: var(--accent4-color);
+    text-decoration: underline;
+}
+
+.hist {
+    display: grid;
+    grid-template: 1fr 6fr / 33% 34% 33;
+    
+}
+
+.hist img {
+   max-width: 375px;
+   height: auto;
+   margin: 8px;
+
+}
+.hist h2 {
+    grid-area: 1 / 1 / 2 / 4;
+    text-align: center;
+}
+
+.elements {
+    order: 2;
+    grid-row-start: 2;
+}
+
+.advent {
+    display: grid;
+    grid-template: 1fr 3fr / repeat(5, 1fr);
+
+}
+.advent h2 {
+    grid-area: 1 / 1 / 2 / 6;
+    text-align: center;
+    padding: 1rem;
+}
+
+.advent img {
+    max-width: 150px;
+    height: auto;
+}
+
+.advent figure {
+    margin: 1rem;
+    grid-row: 2;
 }
