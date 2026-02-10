@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Arthur Jukes | WDD 130 | Week 5 Code Along | Form-Quiz</title>
+    <meta name="description" content="Week 5 Code Along activity that includes forms to create a quiz">
+    <meta name="author" content="David Arthur Jukes">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <main>
+        <h1>Dave's Quiz</h1>
+        <form action="#">
+            <fieldset>
+                <legend>Input Fields</legend>
+
+
+                <label for="q1"><span class="number">1.</span>What does the acronym stand for?</label>
+                <input type="text" id="q1" name="q1" required>
+
+                <label for="q2"><span class="number">2.</span>How are id and class attributes selected in CSS?</label>
+                <textarea id="q2" name="q2" rows="5" required></textarea>
+
+                <label for="q3"><span class="number">3.</span>Which of the following is valid CSS comment?</label>
+                <select name="q3" id="q3">
+                    <option value="option1">'''this is a comment'''</option>
+                    <option value="option2">/* this is a comment</option>
+                    <option value="option3">'this is a comment</option>
+                </select>
+
+                <label for="q4"><span class="number">4.</span>What is the bottom margin given this declaration?</label>
+                <p class="code">margin:10px 5px 15px;</p>
+                <input type="text" id="q4" name="q4" required>
+
+            </fieldset>
+            
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+       
+    
+    <footer>
+        <p>©2026 🇺🇸 David Jukes 🇺🇸 Texas, USA</p>
+    </footer>
+</body>
+
+</html>

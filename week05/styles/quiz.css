@@ -1,0 +1,76 @@
+/*
+    CSS for WDD130 course work 
+    David Jukes
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+main {
+    width: 700px;
+    margin: 0 auto;
+    background-color: azure;
+    padding: 1.25rem;
+    border: 1px solid rgb(0 0 0 / .1);
+}
+
+fieldset {
+    border: 1px solid rgb(0 0 0 / .1);
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color:  aliceblue;
+
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+input, select, textarea {
+    font-size: 1.25em;
+    margin: 5px 0;
+    padding: 5px;
+    width:100%;
+}
+
+button {
+    font-size: 1.25em;
+    padding: 10px 20px;
+    background-color: navy;
+    color: #f3f3f3;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+.code {
+    background-color: #03020d;
+    color: #f3f3f3;
+    font-family: monospace;
+    padding: 5px;
+    border-radius: 3px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 2em;
+    font-style: italic;
+    padding-right: .5em;
+}
+
+footer {
+        margin: 1rem auto 0;
+        width: 700px;
+        text-align: center;
+        font-size: .8rem;
+        color: #777;
+        border-top: 1px solid rgb(0 0 0 / .1);
+}
