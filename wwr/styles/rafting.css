@@ -2,7 +2,7 @@
 /* CSS HEX */
     --primary-color: #274E60ff;
     --accent1-color: #C1C0A4ff;
-    --accent2-color: #C7CBCAff;
+    --accent2-color: rgb(238, 232, 208);
     --accent3-color: #211E23ff;
     --accent4-color: #EDBF1Aff; 
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -48,11 +48,11 @@ h1, h2 {
     font-size: 2rem;
 }
 
-
 p, section, article {
     margin: 8px;
     padding: 8px;
 }
+
 
 footer {
     background-color: var(--primary-color);
@@ -171,23 +171,141 @@ footer p {
     grid-row-start: 2;
 }
 
-.advent {
-    display: grid;
-    grid-template: 1fr 3fr / repeat(5, 1fr);
 
+/* below here is for the figure section of the contact us page */
+
+.fig {
+    display: grid;
 }
-.advent h2 {
-    grid-area: 1 / 1 / 2 / 6;
+
+.fig h2 {
     text-align: center;
     padding: 1rem;
 }
 
-.advent img {
+.fig img {
     max-width: 150px;
     height: auto;
 }
 
-.advent figure {
+.fig figure {
     margin: 1rem;
     grid-row: 2;
+    text-align: center;
+}
+
+/* above here is for the figure section of the contact us page */
+
+.advent {
+    grid-template: 1fr 3fr / repeat(5, 1fr);
+}
+
+.advent h2 {
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+iframe {
+    margin: .0 auto;
+}
+
+.emp {
+    grid-template: 1fr 3fr / repeat(3, 1fr);
+}
+
+.emp h2 {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.gen-info {
+    text-align: center;
+}
+
+.double-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    background-color: var(--accent1-color);
+}
+
+fieldset {
+    background-color: var(--accent1-color);
+    padding: .5em;
+    border: 1 px solid rgb(0 0 0 / .1);
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: .5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.column3 {
+    grid-template-columns: 5% 95%;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding:.5rem;
+    border: 1px solid rgb(0 0 0 / .1);
+    border-radius: .5rem;
+    display: grid;
+    background-color: var(--accent2-color);
+}
+
+legend {
+    padding: .5rem;
+    color: var(--accent2-color);
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button :hover select {
+    background-color: var(--accent4-color);
+}
+
+.radio-label {
+    text-align: left;
+}
+
+textarea, input {
+    background-color: var(--accent2-color);
+    font-size: large;
 }
