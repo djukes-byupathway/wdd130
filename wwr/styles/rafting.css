@@ -238,11 +238,10 @@ iframe {
 fieldset {
     background-color: var(--accent1-color);
     padding: .5em;
-    border: 1 px solid rgb(0 0 0 / .1);
+    border: 1px solid rgb(0 0 0 / .1);
     display: grid;
     gap: .5rem;
     margin: 1rem;
-    padding: 1rem;
 }
 
 .column1 {
