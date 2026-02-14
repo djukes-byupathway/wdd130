@@ -223,9 +223,8 @@ footer p {
 .gen-info {
     text-align: center;
     display: grid;
-    margin: .1 auto;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 30%, 70%;
+    grid-template-columns: 40% 60%; 
+    grid-template-rows: 10% 20% 70%;    
     gap: 16px;
 }
 
