@@ -385,7 +385,7 @@ textarea, input {
     grid-row: 1 / 2;
 }
 
-.card h4 {
+.card h3 {
     grid-row: 2/ 3;
     padding: .5rem;
 }
